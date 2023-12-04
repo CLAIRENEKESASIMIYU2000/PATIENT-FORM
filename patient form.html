@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenyatta National Hospital - Patient Registration</title>
+  <style>
+    body {
+      
+     font-family: Arial, sans-serif;
+      margin: 20px;
+      background-image: url('https://yesofcorsa.com/wp-content/uploads/2017/05/Hospital-Wallpaper-1080p.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    fieldset {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Kenyatta National Hospital - Patient Registration</h2>
+
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="contactNumber">Contact Number:</label>
+      <input type="tel" id="contactNumber" name="contactNumber" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Medical Information</legend>
+      <label for="healthCondition">Health Condition:</label>
+      <textarea id="healthCondition" name="healthCondition" rows="4"></textarea>
+
+      <label for="allergies">Allergies:</label>
+      <input type="text" id="allergies" name="allergies">
+
+      <label for="medications">Current Medications:</label>
+      <textarea id="medications" name="medications" rows="4"></textarea>
+
+      <label for="emergencyContact">Emergency Contact:</label>
+      <input type="text" id="emergencyContact" name="emergencyContact">
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
